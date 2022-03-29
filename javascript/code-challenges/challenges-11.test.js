@@ -59,7 +59,13 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  let elementSum = 0;
+  input.map(element => {
+    element.map(value => {
+      elementSum += value;
+    });
+  });
+  return elementSum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +81,17 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  let arrayOfArrays = [];
+  input.map( element => {
+    let array = [];
+    arrayOfArrays.push(array);
+    element.map( value => {
+      if (typeof(value) === 'number' && value%5===0) {
+        array.push(Math.pow(2,value));
+      }
+    });
+  });
+  return arrayOfArrays;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -141,7 +157,16 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let charNames = '';
+  data.map((value,idx) => {
+    if ( idx===data.length-1) {
+      charNames += value.name;
+    }
+    else if (value.gender==='male' || value.gender==='female') {
+      charNames += value.name + ' and ';
+    }
+  });
+  return charNames;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -151,7 +176,9 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let tinyGuy = data.reduce((littleDude, dude) => parseInt(littleDude.height) <dude.height ? littleDude : dude).name;
+
+  return tinyGuy;
 };
 
 /* ------------------------------------------------------------------------------------------------
