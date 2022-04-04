@@ -26,7 +26,8 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
-  // Solution code here...
+  let onlyFirst = arr.map(value => value.charAt(0));
+  return onlyFirst;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,7 +39,8 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // Solution code here...
+  let onlySmiles = arr.filter(value => value.includes(`:)`));
+  return onlySmiles;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,7 +52,8 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  let regularNumber = JSON.parse(JSON.stringify(arr).replace(/[-)( ]+/g, ''));
+  return regularNumber;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,7 +65,8 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  let oddIdxOnly = str.split('').filter((value,idx) => idx % 2 !== 0).join('');
+  return oddIdxOnly;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -72,7 +76,8 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  let ifSmile = arr.every(str => str.includes(`:)`));
+  return ifSmile;
 };
 
 /* ------------------------------------------------------------------------------------------------
