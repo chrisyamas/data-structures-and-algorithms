@@ -4,7 +4,7 @@ The challenege is to write a function called `reverseArray` which takes an array
 
 ## Whiteboard Process
 
-![Whiteboard Image](array-reverse.png)
+![Whiteboard of Array Reversal](array-reverse.png)
 
 ## Approach & Efficiency
 
