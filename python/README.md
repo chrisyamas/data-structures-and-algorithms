@@ -4,9 +4,10 @@
 
 ### Table of Contents
 
-- [Code Challenge 1: Array Reversal](./array-reverse/README.md)
-- [Code Challenge 2: Array Insert/Shift](./array_insert_shift/README.md)
-- [Code Challenge 2: Array Insert/Shift](./array_binary_search/README.md)
+- [Code Challenge 1: Array Reversal](./docs/array-reverse/README.md)
+- [Code Challenge 2: Array Insert/Shift](./docs/array_insert_shift/README.md)
+- [Code Challenge 3: Array Binary Search](./docs/array_binary_search/README.md)
+- [Code Challenge 5: Linked List](./docs/linked_list/README.md)
 
 ### Folder and Challenge Setup
 
