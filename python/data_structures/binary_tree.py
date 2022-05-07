@@ -7,14 +7,41 @@ class BinaryTree:
         self.root = None
 
     def pre_order(self):
-        # method body here
-        pass
+        def traverse(root, values):
+            if not root:
+                return
+
+            values.append(root.value)
+            traverse(root.left, values)
+            traverse(root.right, values)
+
+        pre_ordered_vals = []
+        traverse(self.root, pre_ordered_vals)
+        return pre_ordered_vals
 
     def in_order(self):
-        pass
+        def traverse(root, values):
+            if not root:
+                return
+            traverse(root.left, values)
+            values.append(root.value)
+            traverse(root.right, values)
+
+        in_ordered_vals = []
+        traverse(self.root, in_ordered_vals)
+        return in_ordered_vals
 
     def post_order(self):
-        pass
+        def traverse(root, values):
+            if not root:
+                return
+            traverse(root.left, values)
+            traverse(root.right, values)
+            values.append(root.value)
+
+        post_ordered_vals = []
+        traverse(self.root, post_ordered_vals)
+        return post_ordered_vals
 
 
 class Node:
