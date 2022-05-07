@@ -1,16 +1,24 @@
 class BinaryTree:
     """
-    Put docstring here
+    Contains methods for each of the three types of depth first Binary Tree traversals.
     """
 
     def __init__(self):
-        # initialization here
+        self.root = None
+
+    def pre_order(self):
+        # method body here
         pass
 
-    def some_method(self):
-        # method body here
+    def in_order(self):
+        pass
+
+    def post_order(self):
         pass
 
 
 class Node:
-    pass
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
