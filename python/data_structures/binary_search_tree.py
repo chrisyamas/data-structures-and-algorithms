@@ -4,7 +4,7 @@ from data_structures.binary_tree import BinaryTree, Node
 
 class BinarySearchTree(BinaryTree):
     """
-    Put docstring here
+    Contains methods for both adding a new node to a BST and searching a BST to see if a particular value is contained by any of its nodes.
     """
 
     def add(self, value):
