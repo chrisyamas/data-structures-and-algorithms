@@ -71,15 +71,6 @@ class LinkedList:
             current = current.next
 
 
-    def includes(self, query):
-        current = self.head
-        while current:
-            if current.value == query:
-                return True
-            current = current.next
-        return False
-
-
 class Node:
     def __init__(self, node_value=None, next_node=None):
         self.value = node_value
