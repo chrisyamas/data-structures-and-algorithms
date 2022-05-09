@@ -5,17 +5,17 @@ from data_structures.linked_list import LinkedList, TargetError
 Commented out the below test because any time the test was commented in (even if it was skipped) pytest would freeze up and not run.
 """
 
-# # @pytest.mark.skip("TODO")
-# def test_append():
-#     linked_list = LinkedList()
+# @pytest.mark.skip("TODO")
+def test_append():
+    linked_list = LinkedList()
 
-#     linked_list.insert("apple")
+    linked_list.insert("apple")
 
-#     linked_list.insert("banana")
+    linked_list.insert("banana")
 
-#     linked_list.append("cucumber")
+    linked_list.append("cucumber")
 
-#     assert str(linked_list) == "{ banana } -> { apple } -> { cucumber } -> NULL"
+    assert str(linked_list) == "{ banana } -> { apple } -> { cucumber } -> NULL"
 
 
 # @pytest.mark.skip("TODO")
