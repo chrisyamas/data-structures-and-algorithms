@@ -66,3 +66,58 @@ def tree():
     tree.root.right.right = Node("g")
 
     return tree
+
+
+# Happy Path case
+def test_find_max_normal_tree():
+    tree = BinaryTree()
+
+    tree.root = Node(1)
+    tree.root.left = Node(2)
+    tree.root.right = Node(3)
+    tree.root.left.left = Node(4)
+    tree.root.left.right = Node(5)
+    tree.root.right.left = Node(6)
+    tree.root.right.right = Node(7)
+
+    expected = 7
+    actual = tree.find_max()
+    assert actual == expected
+
+
+def test_find_max_all_negative():
+    tree = BinaryTree()
+
+    tree.root = Node(-1)
+    tree.root.left = Node(-2)
+    tree.root.right = Node(-3)
+    tree.root.left.left = Node(-4)
+    tree.root.left.right = Node(-5)
+    tree.root.right.left = Node(-6)
+    tree.root.right.right = Node(-7)
+
+    expected = -1
+    actual = tree.find_max()
+    assert actual == expected
+
+def test_find_max_all_zero():
+    tree = BinaryTree()
+
+    tree.root = Node(0)
+    tree.root.left = Node(0)
+    tree.root.right = Node(0)
+    tree.root.left.left = Node(0)
+    tree.root.left.right = Node(0)
+    tree.root.right.left = Node(0)
+    tree.root.right.right = Node(0)
+
+    expected = 0
+    actual = tree.find_max()
+    assert actual == expected
+
+
+def test_find_max_empty_tree():
+    tree = BinaryTree()
+    with pytest.raises(IndexError):
+        tree.find_max()
+
