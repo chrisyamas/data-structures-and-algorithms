@@ -72,6 +72,21 @@ class LinkedList:
             current = current.next
 
 
+    def kth_from_end(self, kdex):
+        if kdex < 0:
+            raise TargetError
+        current = self.head
+        vals_list = []
+        while current:
+            vals_list.append(current.value)
+            current = current.next
+        vals_list.reverse()
+        if kdex >= len(vals_list):
+            raise TargetError
+
+        return vals_list[kdex]
+
+
 class Node:
     def __init__(self, node_value=None, next_node=None):
         self.value = node_value
