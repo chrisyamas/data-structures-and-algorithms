@@ -9,6 +9,8 @@
 - [Code Challenge 3: Array Binary Search](./docs/array_binary_search/README.md)
 - [Code Challenge 5: Linked List](./docs/linked_list/README.md)
 - [Code Challenge 6: Linked List Insertions](./docs/linked_list_insertions/README.md)
+- [Code Challenge 7: Linked List Kth](./docs/linked_list_kth/README.md)
+- [Code Challenge 8: Linked List Zip](./docs/linked_list_zip/README.md)
 - [Code Challenge 16: Tree Max](./docs/tree_max/README.md)
 
 ### Folder and Challenge Setup
