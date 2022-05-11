@@ -3,20 +3,32 @@ from data_structures.queue import Queue
 
 class AnimalShelter:
     def __init__(self):
-        self.dog_obj = Queue()
-        self.cat_obj = Queue()
+        self.cats = Queue()
+        self.dogs = Queue()
 
     def enqueue(self, animal):
-        pass
+        if animal.type == 'Dog':
+            self.dogs.enqueue(animal)
+
+        if animal.type == 'Cat':
+            self.cats.enqueue(animal)
 
     def dequeue(self, pref):
-        pass
+        if pref == 'dog':
+            return self.dogs.dequeue()
+
+        elif pref == 'cat':
+            return self.cats.dequeue()
+
+        else:
+            return None
+
 
 class Dog:
     def __init__(self):
-        self.type = 'dog'
+        self.type = 'Dog'
 
 
 class Cat:
     def __init__(self):
-        self.type = 'cat'
+        self.type = 'Cat'
