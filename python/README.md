@@ -12,6 +12,7 @@
 - [Code Challenge 7: Linked List Kth](./docs/linked_list_kth/README.md)
 - [Code Challenge 8: Linked List Zip](./docs/linked_list_zip/README.md)
 - [Code Challenge 16: Tree Max](./docs/tree_max/README.md)
+- [Code Challenge 17: Tree Breadth First](./docs/tree_breadth_first/README.md)
 
 ### Folder and Challenge Setup
 
