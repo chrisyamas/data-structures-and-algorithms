@@ -9,17 +9,14 @@ class AnimalShelter:
     def enqueue(self, animal):
         if animal.type == 'Dog':
             self.dogs.enqueue(animal)
-
-        if animal.type == 'Cat':
+        elif animal.type == 'Cat':
             self.cats.enqueue(animal)
 
     def dequeue(self, pref):
         if pref == 'dog':
             return self.dogs.dequeue()
-
         elif pref == 'cat':
             return self.cats.dequeue()
-
         else:
             return None
 
