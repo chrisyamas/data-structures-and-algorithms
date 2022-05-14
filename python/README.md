@@ -12,6 +12,8 @@
 - [Code Challenge 7: Linked List Kth](./docs/linked_list_kth/README.md)
 - [Code Challenge 8: Linked List Zip](./docs/linked_list_zip/README.md)
 - [Code Challenge 10: Stack and Queue](./docs/stack_and_queue/README.md)
+- [Code Challenge 11: Stack Queue Pseudo](./docs/stack_queue_pseudo/README.md)
+- [Code Challenge 12: Stack Queue Animal Shelter](./docs/stack_queue_animal_shelter/README.md)
 - [Code Challenge 16: Tree Max](./docs/tree_max/README.md)
 - [Code Challenge 17: Tree Breadth First](./docs/tree_breadth_first/README.md)
 

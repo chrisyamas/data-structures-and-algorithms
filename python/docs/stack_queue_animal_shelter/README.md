@@ -23,9 +23,21 @@ Implements the following methods:
 
 ### Approach
 
-Approach was testing first to support debugging of methods.
+#### Enqueue method
+
+- function takes in object
+- checks if type is Dog or Cat
+- add object to respective queue
+- if other type, adds nothing
+
+#### Dequeue method
+
+- function takes in string
+- checks if pref string is 'dog' or 'cat'
+- returns first object in respective queue
+- if other pref specified, returns nothing
 
 ### Efficiency
 
-- Big O Time: O(1); same amount of time will be used for adding and removing, no matter the length of the data structure
-- Big O Space: O(1); same amount of space will be used for adding and removing, no matter the length of the data structure
+- Time: O(1); efficiency will not vary, no matter how many elements are in the queue
+- Space: O(1): efficiency will not vary, no matter how many elements are in the queue
