@@ -17,6 +17,7 @@
 - [Code Challenge 16: Tree Max](./docs/tree_max/README.md)
 - [Code Challenge 17: Tree Breadth First](./docs/tree_breadth_first/README.md)
 - [Code Challenge 18: Tree Fizz Buzz](./docs/tree_fizz_buzz/README.md)
+- [Code Challenge 31: Hashmap Repeated Word](./docs/hashmap_repeated_word/README.md)
 
 ### Folder and Challenge Setup
 
