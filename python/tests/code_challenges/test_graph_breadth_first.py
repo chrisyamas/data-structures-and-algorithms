@@ -1,12 +1,12 @@
 import pytest
-from data_structures.graph import Graph
+from data_structures.graph import Graph, Vertex
 
 
 def test_exists():
     assert Graph
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_bfs(graph):
     nodes = graph.get_nodes()
     root = nodes[0]
@@ -16,6 +16,21 @@ def test_bfs(graph):
     assert actual == expected
 
     # DANGER: Metroville/Monstropolis could be switched as well as Narnia/Naboo and still be valid BFS. What to do?
+
+def test_root_node_not_in_graph(graph):
+
+    pythonville = Vertex("Pythonville")
+
+    with pytest.raises(KeyError):
+        graph.breadth_first(pythonville)
+
+
+def test_root_no_edges(graph):
+    sillytown = graph.add_node("Sillytown")
+
+    actual = graph.breadth_first(sillytown)
+    expected = ["Sillytown"]
+    assert actual == expected
 
 
 @pytest.fixture

@@ -19,6 +19,7 @@
 - [Code Challenge 18: Tree Fizz Buzz](./docs/tree_fizz_buzz/README.md)
 - [Code Challenge 31: Hashmap Repeated Word](./docs/hashmap_repeated_word/README.md)
 - [Code Challenge 35: Graph Implementation](./docs/graph/README.md)
+- [Code Challenge 36: Graph Breadth First](./docs/graph_breadth_first/README.md)
 
 ### Folder and Challenge Setup
 
