@@ -1,3 +1,5 @@
+from data_structures.invalid_operation_error import InvalidOperationError
+from data_structures.linked_list import Node
 
 class Graph:
 
@@ -27,6 +29,31 @@ class Graph:
     def size(self):
         return len(self.adj_list)
 
+    def breadth_first(self, root_vertex):
+        if root_vertex not in self.adj_list:
+            raise KeyError
+        queue = Queue()
+        visited = set()
+        visited.add(root_vertex)
+        collection = []
+        collection.append(root_vertex.value)
+        # create node instance that holds vertex as its value
+        first_vertex_node = Node(root_vertex)
+        queue.enqueue(first_vertex_node)
+        while queue.read():
+            current = queue.dequeue()
+            current_edges = self.adj_list[current.value]
+            for edge in current_edges:
+                if not self.adj_list[edge.vertex]:
+                    raise KeyError
+                if edge.vertex not in visited:
+                    visited.add(edge.vertex)
+                    collection.append(edge.vertex.value)
+                    vertex_node = Node(edge.vertex)
+                    queue.enqueue(vertex_node)
+        print(collection)
+        return(collection)
+
 
 class Vertex:
 
@@ -40,3 +67,29 @@ class Edge:
         self.vertex = neighbor
         self.weight = weight
 
+
+class Queue:
+
+    def __init__(self):
+        self.front = None
+        self.rear = None
+
+    def enqueue(self, node):
+        if self.rear:
+            self.rear.next = node
+        self.rear = node
+        if not self.front:
+            self.front = self.rear
+
+    def dequeue(self):
+        if not self.front:
+            raise InvalidOperationError
+        current_front = self.front
+        self.front = current_front.next
+        return current_front
+
+    def read(self):
+        return self.front
+
+    def is_empty(self):
+        return not self.front
