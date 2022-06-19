@@ -9,10 +9,15 @@ class Stack:
 
     def __init__(self):
         self.top = None
+        self.size = 0
 
 
     def push(self, value):
-        self.top = Node(value, self.top)
+        new_node = Node(value)
+        if self.top:
+            new_node.next = self.top
+        self.top = new_node
+        self.size += 1
 
 
     def pop(self):
@@ -21,6 +26,7 @@ class Stack:
         current_top = self.top
         self.top = self.top.next
         current_top.next = None
+        self.size -= 1
         return current_top.value
 
 
@@ -31,5 +37,5 @@ class Stack:
 
 
     def is_empty(self):
-        return not self.top
+        return self.size == 0
 
