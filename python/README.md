@@ -23,6 +23,7 @@
 - [Code Challenge 33: Hashtable Left Join](./docs/hashtable_left_join/README.md)
 - [Code Challenge 35: Graph Implementation](./docs/graph/README.md)
 - [Code Challenge 36: Graph Breadth First](./docs/graph_breadth_first/README.md)
+- [Code Challenge 37: Graph Business Trip](./docs/graph_business_trip/README.md)
 
 ### Folder and Challenge Setup
 
