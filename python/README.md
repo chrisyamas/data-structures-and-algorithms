@@ -20,6 +20,7 @@
 - [Code Challenge 30: Hash Implementation](./docs/hashtable/README.md)
 - [Code Challenge 31: Hashmap Repeated Word](./docs/hashmap_repeated_word/README.md)
 - [Code Challenge 32: Tree Intersection](./docs/tree_intersection/README.md)
+- [Code Challenge 33: Hashtable Left Join](./docs/hashtable_left_join/README.md)
 - [Code Challenge 35: Graph Implementation](./docs/graph/README.md)
 - [Code Challenge 36: Graph Breadth First](./docs/graph_breadth_first/README.md)
 
