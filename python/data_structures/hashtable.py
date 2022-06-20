@@ -10,6 +10,12 @@ class Hashtable:
         self.size = size
         self._buckets = self.size * [None]
 
+    def __eq__(self, other):
+        for key in self.keys():
+            if self.get(key) != other.get(key):
+                return False
+        return True
+
     def set(self, key, value):
         index = self.hash(key)
         bucket = self._buckets[index]
