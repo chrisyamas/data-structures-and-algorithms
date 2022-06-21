@@ -54,6 +54,18 @@ class Graph:
         print(collection)
         return(collection)
 
+    def depth_first_search(self, start):
+        def pre_order(vertex, collection=[], visited=set()):
+            if not vertex or vertex not in self.adj_list or vertex in visited:
+                return collection
+            collection.append(vertex.value)
+            visited.add(vertex)
+            edge_list = self.adj_list[vertex]
+            for edge in edge_list:
+                pre_order(edge.vertex, collection, visited)
+            return collection
+        return pre_order(start)
+
 
 class Vertex:
 
