@@ -24,6 +24,7 @@
 - [Code Challenge 35: Graph Implementation](./docs/graph/README.md)
 - [Code Challenge 36: Graph Breadth First](./docs/graph_breadth_first/README.md)
 - [Code Challenge 37: Graph Business Trip](./docs/graph_business_trip/README.md)
+- [Code Challenge 38: Graph Depth First](./docs/graph_depth_first/README.md)
 
 ### Folder and Challenge Setup
 
